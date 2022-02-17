@@ -1,0 +1,23 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 8889,
+    "username": "root",
+    "password": "cana@123",
+    "database": "test",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+        "src/modules/user/infra/typeorm/entities/User.ts",
+        "src/modules/lesson/infra/typeorm/entities/Lesson.ts",
+        "src/modules/course/infra/typeorm/entities/Course.ts"
+    ],
+    "migrations": [
+        "src/database/migration/*.ts"
+    ],
+    
+    "cli": {
+        "entitiesDir": "src/modules",
+        "migrationsDir": "src/database/migration/"
+    }
+ }
